@@ -29,22 +29,25 @@ nav:first-child {
 }
 nav:first-child + nav {
 	color: #000;
-	height: 45px;
+	height: 38px;
 	box-shadow: 0px 2px 2px 0px #ccc;
 	padding: 0px 70px;
 }
 nav:first-child li:hover{
 	background-color: #07341c;
 	border-radius: 10px;
-	cursor:pointer;
+	cursor: pointer;
 }
 input[type=text]{
-	padding: 5px;
-	border-radius: 5px;	
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 4px;
 }
 input[type=button]{
-	padding: 5px;
-	background: green;
+    padding: 7px;
+    background: green;
+    font-weight: bold;
+    color: #fff;
 }
 ul {
 	list-style: none;
@@ -54,28 +57,51 @@ nav ul li {
 	padding: 7px 10px;
 }
 .topdiv {
-	height: 200px;
+	height: 230px;
+	margin-bottom: 25px;
 }
 .maindiv {
-	width: 710px;
-    margin: 10px 0px 5px 70px;
+	width: 800px;
+    margin: 10px 0px 5px 100px;
     float: left;
 }
-.sidediv {
-	width: 208px;
-	height: 766px;
-	border: 1px solid #000;
-	margin: 10px 70px 5px 0px;
+aside {
+	width: 280px;
+	height: 1028px;
+	/*border: 1px solid #000;*/
+	margin: 10px 100px 5px 0px;
 	float: right;
 }
 .item li {
-	width: 204px;
-	min-height: 233px;
+	width: 236px;
+	min-height: 250px;
 	margin: 0px 30px 10px 0px;
-	box-shadow: 2px 2px #ccc;
+	box-shadow: 0 0 20px #ccc;
 	float: left;
 	font-size: 10px;
 	text-align: center;
+}
+
+aside > section {
+	/*border: 1px solid;*/
+	height: 341px;
+}
+aside section:first-child li {
+	font-size: 1.2em;
+	color: blue;
+}
+aside section:first-child li:hover{
+	cursor: pointer;
+}
+aside section:nth-child(2n+2) > section {
+	box-shadow: 0 0 10px #ccc;
+    height: 84px;
+    margin: 14px 0;
+}
+aside section:nth-child(3n+3) > section {
+	box-shadow: 0 0 10px #ccc;
+    height: 84px;
+    margin: 14px 0;
 }
 
 footer {
