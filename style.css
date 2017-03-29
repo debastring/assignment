@@ -14,19 +14,21 @@ nav:first-child {
 	background: #031a5a;
 	padding: 0px 70px;
 }
-.logo {
+header > nav section:first-child  {
 	width: 50px;
 	height: 38px;
 	float: left;
 	padding-top: 9px;
 }
-.menu {
+
+header > nav section:nth-child(2n+2) {
 	float: left;
 	margin-left: 110px;
 }
-.sarch {
+header > nav section:last-child {
 	float: right;
 }
+
 nav:first-child + nav {
 	color: #000;
 	height: 38px;
@@ -56,23 +58,16 @@ nav ul li {
 	float: left;
 	padding: 7px 10px;
 }
-.topdiv {
+main > section {
 	height: 230px;
 	margin-bottom: 25px;
 }
-.maindiv {
+main > section:nth-child(2) {
 	width: 800px;
     margin: 10px 0px 5px 100px;
     float: left;
 }
-aside {
-	width: 280px;
-	height: 1028px;
-	/*border: 1px solid #000;*/
-	margin: 10px 100px 5px 0px;
-	float: right;
-}
-.item li {
+main > section:nth-child(2) li {
 	width: 236px;
 	min-height: 250px;
 	margin: 0px 30px 10px 0px;
@@ -81,9 +76,15 @@ aside {
 	font-size: 10px;
 	text-align: center;
 }
+aside {
+	width: 280px;
+	height: 1028px;
+	/*border: 1px solid #000;*/
+	margin: 10px 100px 5px 0px;
+	float: right;
+}
 
 aside > section {
-	/*border: 1px solid;*/
 	height: 341px;
 }
 aside section:first-child li {
@@ -114,19 +115,3 @@ footer p {
 	text-align: center;
 	padding: 8px;
 }
-
-/*section:first-child + section {
-	min-height: 400px;
-	width: 650px ;
-	margin: 5px 0px 5px 45px;
-	border: 1px solid #000;
-}
-.item ul li {
-	border: 1px solid #000;
-	padding: 50px;
-}
-.sidea {
-	width: 210px;
-	border: 1px solid #000;
-	float: right;
-}*/
